@@ -69,25 +69,30 @@ header button {
 
 main, .features {
     max-width: 80rem;
-    width: 90%;
     margin: auto;
 }
 
 main {
+    display: flex;
+    width: 100%;
     height: 30rem;
-    background-image: url('../images/mobile_laptop.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 100%;
+    gap: 2rem;
 }
 
-main {
-    padding-top: 2rem;
+.main__content {
+    padding-left: 3rem;
+    flex: 0 1 36rem;
 }
 
-main > * {
-    margin-right: 60%;
-    padding-left: 4rem;
+.main__image {
+    flex: 1 1 100%;
+}
+
+.main__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: 100%;
 }
 
 main .tagline {
@@ -97,7 +102,7 @@ main .tagline {
 }
 
 main .heading {
-    font-size: 2.5rem;
+    font-size: clamp(1rem, 3.5vw, 2.5rem);
 }
 
 main form {
