@@ -1,0 +1,187 @@
+:root {
+    --brand-blue: #304659;
+    --brand-gray: #f5f9fc;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--brand-blue);
+    font-family: sans-serif;
+    background-color: var(--brand-gray);
+}
+
+header {
+    height: 4rem;
+    padding: 1rem 3rem;
+    text-align: center;
+}
+
+header .branding {
+    float: left;
+}
+
+header .branding .wordmark {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: bold;
+}
+
+header nav {
+    display: inline-block;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    display: inline-block;
+}
+
+header nav a {
+    font-weight: bold;
+    color: var(--brand-blue);
+    text-decoration: none;
+    width: 10rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    display: block;
+}
+
+header button {
+    float: right;
+    color: var(--brand-gray);
+    background: var(--brand-blue);
+    width: 5rem;
+    height: 2rem;
+    font-weight: bold;
+}
+
+main, .features {
+    max-width: 80rem;
+    width: 90%;
+    margin: auto;
+}
+
+main {
+    height: 30rem;
+    background-image: url('../images/mobile_laptop.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+main {
+    padding-top: 2rem;
+}
+
+main > * {
+    margin-right: 60%;
+    padding-left: 4rem;
+}
+
+main .tagline {
+    color: gray;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+main .heading {
+    font-size: 2.5rem;
+}
+
+main form {
+    font-size: 0;
+}
+
+main form * {
+    font-size: 1rem;
+}
+
+main form input {
+    background: silver;
+    border: none;
+    padding: 0 1rem;
+    height: 2rem;
+    line-height: 2rem;
+}
+
+main form button {
+    padding: 0 1rem;
+    height: 2rem;
+    border: none;
+    background: var(--brand-blue);
+    color: var(--brand-gray);
+}
+
+.features {
+    padding: 4rem;
+}
+
+.features > section {
+    float: left;
+    width: 25%;
+}
+
+.features .icon {
+    font-size: 2rem;
+}
+
+.features > section > .heading {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.features > section > .description {
+    width: 90%;
+}
+
+.features > section > a {
+    color: var(--brand-blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.features::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.bottom {
+    clear: both;
+    padding: 4rem;
+    margin: 0 4rem;
+    max-width: 80rem;
+    width: 90%;
+    background: white;
+}
+
+.bottom > * {
+    width: 50%;
+}
+
+.bottom .heading {
+    font-size: 3rem;
+}
+
+.bottom .description {
+    color: gray;
+}
+
+footer {
+    width: 80%;
+    height: 2rem;
+    margin: auto;
+    background-color: silver;
+}
